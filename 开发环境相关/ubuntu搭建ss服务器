@@ -1,3 +1,5 @@
+Ubuntu16.04
+
 apt-get update
 
 apt-get install python-pip
@@ -19,3 +21,11 @@ etc/shadowsocks.json
 
 
 ssserver -c /etc/shadowsocks.json -d start
+开机启动，可将该命令写入/etc/rc.local中
+
+
+定时任务
+crontab -e
+
+写入
+00 03 * * * root reboot
