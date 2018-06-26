@@ -1,0 +1,18 @@
+sudo apt-get update  
+sudo apt-get install python-gevent python-pip  
+sudo pip install shadowsocks  
+apt-get install python-m2crypto  
+
+vi /etc/shadowsocks.json  
+
+{  
+    "server":"0.0.0.0",  
+    "server_port":8388,  
+    "local_port":1080,  
+    "password":"Your Password",  
+    "timeout":600,  
+    "method":"aes-256-cfb"  
+}  
+
+
+ssserver -c /etc/shadowsocks.json -d start  
