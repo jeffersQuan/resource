@@ -5,6 +5,8 @@ apt-get update
 apt-get install python-pip
 
 pip install shadowsocks
+如果报错unsupported locale setting
+执行命令 export LC_ALL=C
 
 etc/shadowsocks.json
 
