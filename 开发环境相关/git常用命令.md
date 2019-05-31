@@ -29,6 +29,14 @@ git commit
 git commit -m "message"
 ```
 
+- 推送本地仓库提交记录到远程仓库
+```
+git push [远程仓库] [本地分支]
+```
+通常用到的就是git push origin master
+
+注：origin是一个标签，指向远程仓库，可以用git remote -v命令查看当前的origin。master是本地仓库的一个分支。
+
 - 创建分支
 ```
 git checkout -b [branch]
